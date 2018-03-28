@@ -1,1 +1,8 @@
 remote_theme: ctrlaltdev/ctrlaltdev-theme
+theme_settings:
+  title: "pugserver"
+  description: "A simple pug server"
+  
+sass:
+  sass_dir: _sass
+  style: :compressed
