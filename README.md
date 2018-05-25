@@ -4,24 +4,25 @@
 [![licence](https://img.shields.io/npm/l/pugserver.svg?style=for-the-badge)](https://github.com/ctrlaltdev/pug-server/blob/master/LICENCE.md)
 [![Sonarqube Tech Debt](https://img.shields.io/sonar/https/sonarcloud.io/pugserver/tech_debt.svg?style=for-the-badge)](https://sonarcloud.io/project/issues?facetMode=effort&id=pugserver&resolved=false&types=CODE_SMELL)
 [![Sonarqube Coverage](https://img.shields.io/sonar/https/sonarcloud.io/pugserver/coverage.svg?style=for-the-badge)](https://sonarcloud.io/component_measures?id=pugserver&metric=Coverage)
-[![I love badges](https://img.shields.io/badge/I%20love-badges-FF00FF.svg?style=for-the-badge)](https://shields.io)
 
 ### Pug Server
-Basic [`pug`](https://pugjs.org) file server. Ideal for building local prototypes apart from any application. All other files are served statically as they usually would.
+Basic [pug](https://pugjs.org) file server. Ideal for building local prototypes apart from any application. All other files are served statically as they usually would.
 
-installation
+#### Installation
 ``` sh
 npm install -g pugserver
 ```
 
-create a folder
+##### Create a folder
 
+```
     + myfolder/
       - index.pug
       - example.css
       - example.js
+```
 
-usage
+#### Usage
 ``` sh
 pugserver path/to/myfolder
 ```
