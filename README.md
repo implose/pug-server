@@ -30,4 +30,8 @@ pugserver path/to/myfolder
 open your browser to [http://localhost:8080/index.pug](http://localhost:8080/index.pug)
 
 The path argument is optional. If not present it will default to current directory.
-You can choose to run your server on another port than 8080, to do so, use the -p flag followed by the port number: `pugserver -p 1337`
+You can choose to run your server on another port than 8080, to do so, use the -p flag followed by the port number:
+
+``` sh
+pugserver -p 1337`
+```
