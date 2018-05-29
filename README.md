@@ -2,8 +2,8 @@
 [![NPM Downloads](https://img.shields.io/npm/dt/pugserver.svg?style=for-the-badge)](https://www.npmjs.com/package/pugserver)
 [![GitHub release](https://img.shields.io/github/release/ctrlaltdev/pug-server.svg?style=for-the-badge)](https://github.com/ctrlaltdev/pug-server/releases)
 [![licence](https://img.shields.io/npm/l/pugserver.svg?style=for-the-badge)](https://github.com/ctrlaltdev/pug-server/blob/master/LICENCE.md)
-[![Sonarqube Tech Debt](https://img.shields.io/sonar/https/sonarcloud.io/pug-server/tech_debt.svg?style=for-the-badge)](https://sonarcloud.io/project/issues?facetMode=effort&id=pugserver&resolved=false&types=CODE_SMELL)
-[![Sonarqube Coverage](https://img.shields.io/sonar/https/sonarcloud.io/pug-server/coverage.svg?style=for-the-badge)](https://sonarcloud.io/component_measures?id=pugserver&metric=Coverage)
+[![Sonarqube Tech Debt](https://img.shields.io/sonar/https/sonarcloud.io/pugserver/tech_debt.svg?style=for-the-badge)](https://sonarcloud.io/project/issues?facetMode=effort&id=pugserver&resolved=false&types=CODE_SMELL)
+[![Sonarqube Coverage](https://img.shields.io/sonar/https/sonarcloud.io/pugserver/coverage.svg?style=for-the-badge)](https://sonarcloud.io/component_measures?id=pugserver&metric=Coverage)
 
 ### Pug Server
 Basic [pug](https://pugjs.org) file server. Ideal for building local prototypes apart from any application. All other files are served statically as they usually would.
