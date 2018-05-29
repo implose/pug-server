@@ -1,7 +1,7 @@
 {
   "name": "pugserver",
   "description": "a dynamic pug server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "bin": "./pugserver.js",
   "preferGlobal": true,
   "author": "Yorick <yorick@ctrlaltdev.xyz>",
@@ -19,7 +19,8 @@
   },
   "main": "pugserver.js",
   "scripts": {
-    "start": "node pugserver.js"
+    "start": "node pugserver.js",
+    "test": ""
   },
   "license": "MPL-2.0",
   "keywords": [
