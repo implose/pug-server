@@ -32,5 +32,5 @@ The path argument is optional. If not present it will default to current directo
 You can choose to run your server on another port than 8080, to do so, use the -p flag followed by the port number:
 
 ``` sh
-pugserver -p 1337`
+pugserver -p 1337
 ```
