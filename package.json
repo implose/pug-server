@@ -1,14 +1,14 @@
 {
   "name": "pugserver",
   "description": "a dynamic pug server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": "./pugserver.js",
   "preferGlobal": true,
-  "author": "Yorick <yorick@ctrlaltdev.xyz>",
+  "author": "Yorick <yorick@ctrlalt.dev>",
   "dependencies": {
     "minimist": "^1.2.0",
-    "node-static": "^0.7.10",
-    "pug": "^2.0.3"
+    "node-static": "^0.7.11",
+    "pug": "^2.0.4"
   },
   "repository": {
     "type": "git",
