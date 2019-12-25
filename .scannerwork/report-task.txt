@@ -1,7 +1,0 @@
-organization=ctrlaltdev
-projectKey=pugserver
-serverUrl=https://sonarcloud.io
-serverVersion=7.2.0.12086
-dashboardUrl=https://sonarcloud.io/dashboard/index/pugserver
-ceTaskId=AWOrCoxaW-WCgz_t-X7f
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWOrCoxaW-WCgz_t-X7f

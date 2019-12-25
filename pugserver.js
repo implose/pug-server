@@ -1,22 +1,27 @@
 #!/usr/bin/env node
-var http = require('http'),
-  pug = require('pug'),
-  staticfiles = require('node-static'),
-  pugRe = /\.pug$/,
-  argv = require('minimist')(process.argv.slice(2)),
-  path = argv._[0],
-  port = argv.p || 8080,
-  fileServer = new staticfiles.Server(path || '.');
+const http = require('http')
+const fs = require('fs')
+const path = require('path')
+const pug = require('pug')
+const staticfiles = require('node-static')
 
-http.createServer(function (req, res) {
-  if (req.url.match(pugRe)) {
-    res.writeHead(200, {'Content-Type': 'text/html'})
-    res.end(pug.renderFile('.' + req.url, {
-      filename: '.' + req.url.replace(pugRe, '')
-    }))
-  } else {
-    req.addListener('end', function () {
-      fileServer.serve(req, res)
-    }).resume()
-  }
-}).listen(port);
+const pugPath = process.argv[process.argv.length - 1]
+const port = process.argv[process.argv.findIndex(e => e === '-p') + 1] || 8080
+const fileServer = new staticfiles.Server(pugPath || '.')
+
+try {
+  http.createServer((req, res) => {
+    console.info(req.method, req.url)
+
+    const requrl = req.url.match(/\/$/) ? `${req.url}index` : req.url
+
+    if (fs.existsSync(path.join(pugPath, `${requrl}.pug`))) {
+      res.writeHead(200, { 'Content-Type': 'text/html' })
+      res.end(pug.renderFile(path.join(pugPath, `${requrl}.pug`)))
+    } else {
+      req.addListener('end', () => { fileServer.serve(req, res) }).resume()
+    }
+  }).listen(port)
+} catch (e) {
+  throw new Error(e)
+}

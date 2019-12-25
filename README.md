@@ -26,7 +26,7 @@ npm install -g pugserver
 pugserver path/to/myfolder
 ```
 
-Open your browser to [http://localhost:8080/index.pug](http://localhost:8080/index.pug)
+Open your browser to [http://localhost:8080/](http://localhost:8080/)
 
 The path argument is optional. If not present it will default to current directory.
 You can choose to run your server on another port than 8080. To do so, use the -p flag followed by the port number:

@@ -1,3 +1,10 @@
+v1.1.0
+
+* refactor the server to drop the pug extention in the url
+* change so that trailing slash in url will look for index.pug file
+* add linting
+* update dependencies
+
 v1.0.4
 
 * update dependencies to resolve security vulnerabilities
