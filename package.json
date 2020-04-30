@@ -7,7 +7,8 @@
   "author": "Yorick <yorick@ctrlalt.dev>",
   "dependencies": {
     "node-static": "^0.7.11",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   "scripts": {
     "start": "node pugserver.js",
     "lint": "eslint .",
-    "fix": "eslint --fix ."
+    "fix": "eslint --fix .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "license": "MPL-2.0",
   "keywords": [
@@ -36,5 +39,6 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
-  }
+  },
+  "snyk": true
 }
